@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Evolution de la représentativité des femmes dans les parlements cantonaux </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+    
+    <!-- Initialise the select button -->
+    <select id="selectButton"></select>
+
+    <!-- Create the div where the graph will be -->
+    <div id='plot_area'></div>
+
+    <div class="sidebar">
+
+        <p class="explication">
+            Cette visualisation interactive vous permet d'observer l'évolution du pourcentage de femmes dans les parlements cantonaux et fédéraux depuis les années 1970 jusqu'à aujourd'hui. Ceci est possible pour chaque canton et au niveau fédéral grâce au menu déroulant en haut à gauche. Vous pouvez aussi avoir les données précises en vous baladant sur le graphe.</p>
+
+        <div class="infobox">
+            <p><i>Les parlements sont les organes législatifs qui ont pour principales attribution de voter (adopter, rejeter ou modifier) les lois. Chaque canton possède un parlement cantonal avec un nombre de sièges fixés en fonction de la population. Ce parlement existe aussi au niveau fédéral, mais séparé en deux chambres : le Conseil des Etats et le Conseil National.</i></p>
+        </div>
+
+    </div>
+    
+    <!-- Download d3  -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js' integrity='sha512-0x7/VCkKLLt4wnkFqI8Cgv6no+AaS1TDgmHLOoU3hy/WVtYta2J6gnOIHhYYDJlDxPqEqAYLPS4gzVex4mGJLw==' crossorigin='anonymous'></script>
+
+    <!-- Link with the .js file -->
+    <script src="script.js"></script>
+</body>
+</html>
