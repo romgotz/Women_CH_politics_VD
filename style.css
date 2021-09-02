@@ -1,0 +1,109 @@
+        
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica;
+}
+
+.sidebar {
+  position: absolute;
+  top: 22px;
+  left: 820px;
+  width: 300px;
+  height: 370px;
+  background-color: #f0f0f0;
+  border: 1px solid #666;
+  padding: 15px;
+}
+
+.explication {
+  margin-top: 5px;
+  font-size: 10pt;
+  text-align: justify;
+  font-family: Helvetica;
+}
+
+.infobox {
+  font-size: 10pt;
+  text-align: justify;
+  font-family: Helvetica;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+svg {
+  text-align: center;
+  border: 1px solid #666;
+  margin-left: 5px;
+}
+
+text {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+text.title {
+  font-size: 18px;
+}
+
+.subtitle text {
+  font-size: 10px;
+  text-decoration: underline;
+  fill: gray;
+}
+
+.copyright text {
+  font-size: 10px;
+  fill: gray;
+}
+
+.tooltip {
+  width: 100px;
+  padding: 4px 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  font-size: 12px;
+  pointer-events: none;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.tooltip div {
+  margin: 3px 0;
+}
+
+#selectButton {
+  position: relative; 
+  width : 150px;
+  top: 35px;
+  left: 15px;
+  text-align:center
+}
+
+/* Defining the animation that takes place at the opening of the page  */
+.highlight {
+  animation-name: highlightInfobox;
+  animation-duration: 1.5s;
+  animation-iteration-count: 2;
+}
+
+@keyframes highlightInfobox {
+  0%   { background-color: #f0f0f0; }
+  20%  { background-color: #d0d0d0; }
+  50%  { background-color: #d0d0d0; }
+  100% { background-color: #f0f0f0; }
+}
+
+    
