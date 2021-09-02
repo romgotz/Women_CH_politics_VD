@@ -1,5 +1,5 @@
 # Women_CH_politics_VD
-
+You can try this visualisation on this link : https://romgotz.github.io/Women_CH_politics_VD/
 # Description of the project and context
 This project is about the representativity of women in some of the main political bodies in Switzerland. It is important and interesting to have an idea of the representativity of women in Switzerland's politic bodies and its evolution in the last 50 years in a perspective of gender equity. 
 
