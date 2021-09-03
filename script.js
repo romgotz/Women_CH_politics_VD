@@ -337,7 +337,7 @@ function tweenDash() {
  function afficher_info_canton(d){
   // defining some variables to access information
   let canton = d[0].canton, 
-  seats = d[0].total, 
+  seats = d[10].total, // to have actual # of seats
   droit_vote = d[0].vote_femme;
 
   // Write everything in html and then add it to the infobox in a table (easier than adding text in a svg object)
