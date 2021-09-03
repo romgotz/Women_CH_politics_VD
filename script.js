@@ -37,7 +37,8 @@ svg
       .text('Auteur: RG 2021')
 
 // Once it is in place, we do an animation to grasp the user's attention to the sidebar that gives an explanation of what this visualisation is about. Starts after 2 seconds, to make sure that the user is looking. 
-    setTimeout(function(){
+  let animation_count = 0;  
+  setTimeout(function(){
     $(".explication").addClass('highlight');
     animation_count += 1;
     }, 2000);
@@ -337,7 +338,7 @@ function tweenDash() {
  function afficher_info_canton(d){
   // defining some variables to access information
   let canton = d[0].canton, 
-  seats = d[10].total, // to have actual # of seats
+  seats = d[9].total, // to have actual # of seats
   droit_vote = d[0].vote_femme;
 
   // Write everything in html and then add it to the infobox in a table (easier than adding text in a svg object)
@@ -371,6 +372,6 @@ function tweenDash() {
   setTimeout(function(){
     $( "i" ).html(html);
     $(".infobox").addClass('highlight'); // do the little animation again to grasp user's attention 
-    }, 8000);
+    }, 6500);
 
 };
