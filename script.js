@@ -32,9 +32,9 @@ svg
     .attr('class', 'copyright')
     .attr('target', '_blank')
     .append('text')
-      .attr('x', width - margin.right /2)
+      .attr('x', width - margin.right)
       .attr('y', height + 75)
-      .text('Auteur: RG 2021')
+      .text('Auteur: Romain Götz, 2021')
 
 // Once it is in place, we do an animation to grasp the user's attention to the sidebar that gives an explanation of what this visualisation is about. Starts after 2 seconds, to make sure that the user is looking. 
   let animation_count = 0;  
